@@ -1,19 +1,18 @@
-{
-  "payments": [
+ [
     {
-      "billingAccounts": "Chase Sapphire",
+      "billingAccount": "Chase Sapphire",
       "monthlyDueDate": "03"
     },
 
     {
-      "billingAccounts": "Amex",
+      "billingAccount": "Amex",
       "monthlyDueDate": "25"
     },
 
     {
-      "billingAccounts": "BofA",
+      "billingAccount": "BofA",
       "monthlyDueDate": "21"
     }
 
   ]
-}
+
