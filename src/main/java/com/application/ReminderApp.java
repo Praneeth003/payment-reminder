@@ -1,4 +1,4 @@
-package src.main.java.com;
+package com.application;
 
 public class ReminderApp {
     public static void main(String[] args) {
