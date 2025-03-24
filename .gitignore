@@ -53,3 +53,9 @@ dependency-reduced-pom.xml
 # Gradle
 .gradle/
 build/
+
+.vs_code/
+.idea/
+*.iml
+*.iws
+*.ipr
