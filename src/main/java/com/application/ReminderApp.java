@@ -84,7 +84,7 @@ public class ReminderApp {
                     String subject = "Payment Reminder: " + payment.billingAccount() + " due in " + daysLeft
                             + " day(s)";
 
-                    String content = "Hello, \n\n This is a reminder that your payment for " + payment.billingAccount()
+                    String content = "Hello, \n\nThis is a reminder that your payment for " + payment.billingAccount()
                             +
                             " is due on " + dueDate.toString() + " (" + daysLeft + " day(s) left).\n\n" +
                             "Please make your payment to avoid any late fees.\n\n" +

@@ -1,0 +1,38 @@
+name: Daily Check
+
+on:
+  schedule:
+    # Run at 8:00 AM EST (which is 13:00 UTC)
+    - cron: "0 13 * * *"
+  workflow_dispatch: # Allows manual triggering from GitHub UI
+
+jobs:
+  run-payment-reminder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: "21"
+          distribution: "temurin"
+          cache: maven
+
+      - name: Create .env file
+        run: |
+          cat << EOF > .env
+          EMAIL_USERNAME=${{ secrets.EMAIL_USERNAME }}
+          EMAIL_PASSWORD=${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_HOST=${{ secrets.EMAIL_HOST }}
+          EMAIL_PORT=${{ secrets.EMAIL_PORT }}
+          RECIPIENT_EMAIL=${{ secrets.RECIPIENT_EMAIL }}
+          REMINDER_DAYS_AHEAD=${{ secrets.REMINDER_DAYS_AHEAD }}
+          EOF
+
+      - name: Build with Maven
+        run: mvn clean package
+
+      - name: Run reminder application
+        run: java -jar target/reminder-app-1.0-SNAPSHOT.jar
