@@ -10,8 +10,8 @@ public class EmailService {
     // Load Environment Variables
     private static final Dotenv dotenv = Dotenv.load();
 
-    private final String emailId = dotenv.get("EMAIL_USERNAME");
-    private final String password = dotenv.get("EMAIL_PASSWORD");
+    private final String senderEmailId = dotenv.get("EMAIL_USERNAME");
+    private final String senderPassword = dotenv.get("EMAIL_PASSWORD");
     private final Properties properties;
 
     public EmailService() {
@@ -26,13 +26,13 @@ public class EmailService {
         Session session = Session.getInstance(properties, new Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(emailId, password);
+                return new PasswordAuthentication(senderEmailId, senderPassword);
             }
         });
 
         try {
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress(emailId));
+            message.setFrom(new InternetAddress(senderEmailId));
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
             message.setSubject(subject);
             message.setText(content);

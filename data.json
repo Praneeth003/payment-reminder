@@ -1,18 +1,32 @@
  [
     {
       "billingAccount": "Chase Sapphire",
-      "monthlyDueDate": "03"
+      "monthlyDueDate": "16"
     },
 
     {
       "billingAccount": "Amex",
-      "monthlyDueDate": "25"
+      "monthlyDueDate": "17"
     },
 
     {
       "billingAccount": "BofA",
-      "monthlyDueDate": "21"
-    }
+      "monthlyDueDate": "23"
+    },
 
-  ]
+   {
+     "billingAccount": "Apple Credit Card",
+     "monthlyDueDate": "30"
+   },
+
+   {
+     "billingAccount": "Capital One",
+     "monthlyDueDate": "14"
+   },
+
+   {
+     "billingAccount": "AHFC",
+     "monthlyDueDate": "9"
+   }
+ ]
 
