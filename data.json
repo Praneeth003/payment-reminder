@@ -26,7 +26,12 @@
 
    {
      "billingAccount": "AHFC",
-     "monthlyDueDate": "9"
-   }
+     "monthlyDueDate": "09"
+   },
+  
+   {
+     "billingAccount": "Discover",
+     "monthlyDueDate": "07"
+   },
  ]
 
