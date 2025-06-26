@@ -1,37 +1,30 @@
- [
-    {
-      "billingAccount": "Chase Sapphire",
-      "monthlyDueDate": "16"
-    },
-
-    {
-      "billingAccount": "Amex",
-      "monthlyDueDate": "17"
-    },
-
-    {
-      "billingAccount": "BofA",
-      "monthlyDueDate": "23"
-    },
-
-   {
-     "billingAccount": "Apple Credit Card",
-     "monthlyDueDate": "30"
-   },
-
-   {
-     "billingAccount": "Capital One",
-     "monthlyDueDate": "14"
-   },
-
-   {
-     "billingAccount": "AHFC",
-     "monthlyDueDate": "09"
-   },
-  
-   {
-     "billingAccount": "Discover",
-     "monthlyDueDate": "07"
-   }
- ]
-
+[
+  {
+    "billingAccount": "Chase Sapphire",
+    "monthlyDueDate": 16
+  },
+  {
+    "billingAccount": "Amex",
+    "monthlyDueDate": 17
+  },
+  {
+    "billingAccount": "BofA",
+    "monthlyDueDate": 23
+  },
+  {
+    "billingAccount": "Apple Credit Card",
+    "monthlyDueDate": 30
+  },
+  {
+    "billingAccount": "Capital One",
+    "monthlyDueDate": 14
+  },
+  {
+    "billingAccount": "AHFC",
+    "monthlyDueDate": 9
+  },
+  {
+    "billingAccount": "Discover",
+    "monthlyDueDate": 7
+  }
+]
